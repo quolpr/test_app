@@ -8,4 +8,5 @@ To start this application on your machine you will need:
 
 2. `rake db:create db:schema:load`
 
-To start server - `bin/rails s`, to run tests - `bin/rspec`
+To start server - `bin/rails s`, 
+to run tests - `bin/rspec`

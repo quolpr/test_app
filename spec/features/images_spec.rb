@@ -1,5 +1,4 @@
-# frozen_string_literal: true
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe 'Images management', type: :feature do
   let!(:user) { create :user }
@@ -13,7 +12,7 @@ RSpec.describe 'Images management', type: :feature do
     expect(page).to have_content 'successfully created'
     expect(page).to have_css 'img'
     click_link 'Delete'
-    expect(page).to have_content 'successfully deleted'
+    expect(page).to have_content 'successfully destroyed'
     expect(page).to have_content 'no any images'
   end
 end

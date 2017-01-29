@@ -1,4 +1,3 @@
-inherit_from: .rubocop_todo.yml
 Rails:
   Enabled: true
 AllCops:
@@ -31,3 +30,7 @@ Metrics/BlockLength:
   Exclude:
     - "spec/**/*.rb"
     - "config/initializers/*.rb"
+
+Lint/AssignmentInCondition:
+  Exclude:
+    - 'bin/spring'

@@ -42,7 +42,9 @@ gem 'slim-rails', '~> 3.0'
 # Bootstrap support
 gem 'bootstrap-sass', '~> 3.3'
 # File attachment library for ActiveRecord
-gem 'paperclip', '~> 5.1'
+gem 'carrierwave', '~> 0.10'
+# Image processing
+gem 'mini_magick', '~> 4.6'
 # Forms made easy!
 gem 'simple_form', '~> 3.4'
 
@@ -57,6 +59,7 @@ group :development, :test do
   gem 'spring-commands-rspec'
   gem 'faker'
   gem 'shoulda-matchers'
+  gem 'capybara'
 
   # DB table annotation
   gem 'annotate', require: false

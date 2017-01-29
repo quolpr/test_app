@@ -1,0 +1,5 @@
+= simple_form_for [:user, @image] do |f|
+  = f.error :base 
+  = f.file_field :content
+  br
+  = f.submit

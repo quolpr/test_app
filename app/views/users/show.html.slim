@@ -1,0 +1,13 @@
+p Name: #{@user.name}
+p Email: #{@user.email}
+= link_to 'Edit Profile', edit_user_registration_path
+hr
+- if @user.images.present?
+  - @user.images.each do |image|
+    .user-profile-image
+      = image_tag image.content_url
+      = link_to 'Delete', user_image_path(@user, image), method: :delete
+- else
+  | There are no any images
+- if current_user == @user # pundit or cancancan will be best here
+  p= link_to 'Add new', new_user_image_path(@user)

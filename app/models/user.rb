@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # == Schema Information
 #
 # Table name: users
@@ -23,4 +24,6 @@ class User < ApplicationRecord
          :rememberable, :trackable, :validatable
 
   validates :name, presence: true
+
+  has_many :images
 end

@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # == Schema Information
 #
 # Table name: users
@@ -18,6 +19,8 @@
 
 FactoryGirl.define do
   factory :user do
-    
+    name { Faker::Name.name }
+    sequence(:email) { |n| "test_email_#{n}@gmail.com" }
+    password { Faker::Internet.password }
   end
 end

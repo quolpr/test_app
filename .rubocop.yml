@@ -1,0 +1,33 @@
+inherit_from: .rubocop_todo.yml
+Rails:
+  Enabled: true
+AllCops:
+  TargetRubyVersion: 2.3
+  Include:
+    - Rakefile
+    - config.ru
+    - lib/**/*.rake
+  Exclude:
+    - db/schema.rb
+    - db/migrate/*
+    - db/seeds.rb
+    - Gemfile
+    - Guardfile
+    - 'vendor/**/*'
+Style/Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 130
+Style/LambdaCall:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Exclude:
+    - "spec/**/*.rb"
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*.rb"
+    - "config/initializers/*.rb"

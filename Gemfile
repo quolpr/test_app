@@ -47,6 +47,8 @@ gem 'carrierwave', '~> 0.10'
 gem 'mini_magick', '~> 4.6'
 # Forms made easy!
 gem 'simple_form', '~> 3.4'
+# Make controller more tiny
+gem 'responders', '~> 2.3'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

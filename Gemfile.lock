@@ -276,6 +276,7 @@ DEPENDENCIES
   pg (~> 0.18)
   puma (~> 3.0)
   rails (~> 5.0.1)
+  responders (~> 2.3)
   rspec-rails
   rubocop
   sassc-rails (~> 1.3)
